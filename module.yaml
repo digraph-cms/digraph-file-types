@@ -1,0 +1,30 @@
+module:
+  name: digraph_file_types
+  namespace: \Digraph\Module\FileTypes
+
+types:
+  content:
+    file: ${module.namespace}\File
+    file-bundle: ${module.namespace}\FileBundle
+
+image:
+  presets:
+    full: []
+    gallery-thumb:
+      size: 400 400 cover
+      extension: jpg
+      save:
+        jpeg_quality: 80
+    gallery-full:
+      size: 1200 1200 inset
+
+strings:
+  file:
+    notifications:
+      editbypass: This URL normally displays the uploaded file directly. You are being shown the metadata page instead because you have edit permissions.
+      nofile: There is no file attached to this object
+  forms:
+    file:
+      allowed_extensions: 'Allowed file extensions: <code>!exts</code>'
+      disposition: 'Send Content-Disposition: attachment header to request the browsers prompt users to save the file instead of displaying it in-browser'
+      showpage: Display metadata page instead of immediately beginning download

@@ -1,6 +1,6 @@
 module:
   name: digraph_file_types
-  namespace: \Digraph\Module\FileTypes
+  namespace: \Digraph\Modules\FileTypes
 
 types:
   content:

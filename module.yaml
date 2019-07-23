@@ -7,17 +7,6 @@ types:
     file: ${module.namespace}\File
     file-bundle: ${module.namespace}\FileBundle
 
-image:
-  presets:
-    full: []
-    gallery-thumb:
-      size: 400 400 cover
-      extension: jpg
-      save:
-        jpeg_quality: 80
-    gallery-full:
-      size: 1200 1200 inset
-
 strings:
   file:
     notifications:

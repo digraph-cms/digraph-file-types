@@ -6,12 +6,6 @@ if (!$files) {
     return;
 }
 
-if ($package->noun()['file-bundle.gallery']) {
-    echo $cms->helper('filters')->filter('bbcode_advanced')->filter(
-        '[gallery /]'
-    );
-} else {
-    foreach ($files as $f) {
-        echo $f->metacard();
-    }
+foreach ($files as $f) {
+    echo $f->metacard();
 }

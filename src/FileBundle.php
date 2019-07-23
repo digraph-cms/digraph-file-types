@@ -24,12 +24,6 @@ class FileBundle extends Noun
             'required' => true,
             'extraConstructArgs' => [static::FILESTORE_PATH]
         ];
-        $map['gallery'] = [
-            'weight' => 251,
-            'field' => 'file-bundle.gallery',
-            'label' => $s->string('forms.file-bundle.gallery'),
-            'class' => 'Formward\Fields\Checkbox'
-        ];
         return $map;
     }
 }
